@@ -17,3 +17,10 @@ function palindrome(input){
 }
 
 console.log(palindrome(0));
+
+// input       remainder       reverse
+// 1234        0               0
+// 123         4               4
+// 12          3               43
+// 1           2               432
+// 0             loop is breaks
