@@ -3,6 +3,8 @@
 function ReverseString(s) {
     let lengthOfS = s.length;
     let halfOfS = lengthOfS/2;
+    console.log(lengthOfS);
+    
 
     for(let i = 0; i < halfOfS; i++){
        // swaping(i,n-1-i) i=2 ,lengthOfS-1-2 
