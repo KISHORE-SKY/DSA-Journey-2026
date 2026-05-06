@@ -39,3 +39,32 @@ function secondSmallestNumber(arr) {
 
 //console.log(secondSmallestNumber([0,4,5,7,-1,-2]));
 
+
+
+function countOfDigitNumber(n){
+    if(n === 0) return 1;
+    let count = 0;
+    Math.abs(n);
+    while(n > 0){
+        n = Math.floor(n/10);
+        count++;
+    }
+    return count;
+}
+
+//console.log(countOfDigitNumber(12456));
+
+
+function PalindromeNumber(n) {
+    let nCopy = n;
+    let reverse = 0;
+    while(n > 0){
+        let remainder = 0;
+        remainder = n%10; //get the last digit
+        reverse = 10 * reverse + remainder;
+        n = Math.floor(n/10);
+    }
+    return nCopy === reverse;
+}
+console.log(PalindromeNumber(-121));
+
